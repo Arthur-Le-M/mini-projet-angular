@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { ConsulterRapportComponent } from './consulter-rapport.component';
+
+describe('ConsulterRapportComponent', () => {
+  let component: ConsulterRapportComponent;
+  let fixture: ComponentFixture<ConsulterRapportComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ ConsulterRapportComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(ConsulterRapportComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
