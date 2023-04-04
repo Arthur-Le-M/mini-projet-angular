@@ -7,6 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { SaisirRapportComponent } from './components/saisir-rapport/saisir-rapport.component';
 import { ConsulterRapportComponent } from './components/consulter-rapport/consulter-rapport.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RapportComponent } from './components/rapport/rapport.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,16 @@ import { ConsulterRapportComponent } from './components/consulter-rapport/consul
     HeaderComponent,
     LandingPageComponent,
     SaisirRapportComponent,
-    ConsulterRapportComponent
+    ConsulterRapportComponent,
+    RapportComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

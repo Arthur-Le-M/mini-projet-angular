@@ -1,1 +1,54 @@
-<p>saisir-rapport works!</p>
+<div class="formContainer">
+  <form [formGroup]="formulaire">
+    <h2>Saisie du rapport</h2>
+    <div class="form-group">
+      <label for="nomClient">Nom du client :</label>
+      <input type="text" class="form-control" id="nomClient" formControlName="nomClient" placeholder="Dupont">
+    </div>
+    <div class="form-group">
+      <label for="nomTechnicien">Nom du technicien :</label>
+      <input type="text" class="form-control" id="nomTechnicien" formControlName="nomTechnicien" placeholder="Jean">
+    </div>
+    <div class="form-group">
+      <label for="dateIntervention">Date de l'intervention :</label>
+      <input type="date" class="form-control" id="dateIntervention" formControlName="dateIntervention">
+    </div>
+    <div class="form-group">
+      <label for="dateMiseEnService">Date de mise en service :</label>
+      <input type="date" class="form-control" id="dateMiseEnService" formControlName="dateMiseEnService">
+    </div>
+    <div class="form-group">
+      <label for="rue">Rue :</label>
+      <input type="text" class="form-control" id="rue" formControlName="rue" placeholder="12 rue des fleurs">
+    </div>
+    <div class="form-group">
+      <label for="codePostal">Code postal :</label>
+      <input type="text" class="form-control" id="codePostal" formControlName="codePostal" placeholder="64600">
+    </div>
+    <div class="form-group">
+      <label for="ville">Ville :</label>
+      <input type="text" class="form-control" id="ville" formControlName="ville" placeholder="Anglet">
+    </div>
+    <div class="form-group">
+      <label for="marque">Marque de la chaudière :</label>
+      <input type="text" class="form-control" id="marque" formControlName="marque" placeholder="Chaudipro">
+    </div>
+    <div class="form-group">
+      <label for="modele">Modèle de la chaudière :</label>
+      <input type="text" class="form-control" id="modele" formControlName="modele" placeholder="Chabachauffe 2X">
+    </div>
+    <div class="form-group">
+      <label for="numeroSerie">Numéro de série :</label>
+      <input type="text" class="form-control" id="numeroSerie" formControlName="numeroSerie" placeholder="854654758475">
+    </div>
+    <div class="form-group">
+      <label for="descriptionIntervention">Description de l'intervention :</label>
+      <input type="text" class="form-control" id="descriptionIntervention" formControlName="descriptionIntervention" placeholder="Réparation d'une surchauffe">
+    </div>
+    <div class="form-group">
+      <label for="tempsPasse">Temps passé (en minutes) :</label>
+      <input type="number" class="form-control" id="tempsPasse" formControlName="tempsPasse" placeholder="60">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="saveRapport()">Sauvegarder</button>
+  </form>
+</div>

@@ -1,1 +1,13 @@
-<p>consulter-rapport works!</p>
+<div class = "list-rapport">
+  <ng-container *ngFor="let Rapport of listRapports$ | async">
+    <div class = "rapport">
+      <div>
+        <h3>Rapport {{ Rapport.id }}</h3>
+        <p><span>Client : </span>{{Rapport.nomClient}}</p>
+        <p><span>Date : </span>{{Rapport.dateIntervention}}</p>
+      </div>
+      <button routerLink="/consulter/{{Rapport.id}}">Consulter</button>
+    </div>
+  </ng-container>
+
+</div>

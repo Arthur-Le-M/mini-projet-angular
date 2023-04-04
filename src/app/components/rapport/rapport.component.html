@@ -1,0 +1,26 @@
+<div id="container">
+  <div id="rapport">
+    <h2>Rapport N°{{ unRapport.id }}</h2>
+    <p><span>Client</span> : {{ unRapport.nomClient }}</p>
+    <p><span>Technicien</span> : {{unRapport.nomTechnicien }}</p>
+    <p><span>Date intervention</span> : {{ unRapport.dateIntervention }}</p>
+    <p><span>Date mise en service</span> : {{ unRapport.dateMiseEnService }}</p>
+    <hr>
+    <div class="objet">
+      <h4>Adresse :</h4>
+      <p><span>Rue</span> : {{ unRapport.adresseClient.rue }}</p>
+      <p><span>Code postal</span> : {{ unRapport.adresseClient.codePostal }}</p>
+      <p><span>Ville</span> : {{ unRapport.adresseClient.ville }}</p>
+    </div>
+    <hr>
+    <div class="objet">
+      <h4>Chaudière :</h4>
+      <p><span>Marque</span> : {{ unRapport.chaudiere.marque }}</p>
+      <p><span>Modèle</span> : {{ unRapport.chaudiere.modele }}</p>
+    </div>
+    <hr>
+    <p><span>Numéro de série</span> : {{ unRapport.numeroSerie }}</p>
+    <p><span>Description intervention</span> : {{ unRapport.descriptionIntervention }}</p>
+    <p><span>Temps passé</span> : {{ unRapport.tempsPasse }}</p>
+  </div>
+</div>

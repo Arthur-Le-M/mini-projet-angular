@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.list-rapport{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.rapport{
+  margin-bottom: 20px;
+  background-color: var(--secondary-color);
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 20%;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.rapport div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rapport h3{
+  color: var(--primary-color);
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+span{
+  font-weight: 500;
+}
+
+button{
+  width: 35%;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.08s ease-in-out;
+}
+
+button:hover{
+  background-color: var(--button-hover-color);
+}
+

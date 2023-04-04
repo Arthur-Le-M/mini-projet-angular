@@ -3,12 +3,20 @@
 
 :root {
   --primary-color: #be4600;
-  --secondary-color: #10003d;
+  --secondary-color: #ffe8de;
   --tertiary-color: #fff;
+  --fourth-color: #dac0b5;
   --primary-font: 'Roboto', sans-serif;
+  --button-hover-color: #a13b00;
 }
 
 a{
   text-decoration: none;
   color: #fff;
+}
+
+*{
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
 }
