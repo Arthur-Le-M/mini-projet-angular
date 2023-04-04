@@ -10,6 +10,7 @@ import { ConsulterRapportComponent } from './components/consulter-rapport/consul
 import { HttpClientModule } from '@angular/common/http';
 import { RapportComponent } from './components/rapport/rapport.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
